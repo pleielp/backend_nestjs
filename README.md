@@ -24,25 +24,27 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+web server using [Nestjs](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
 
 ```bash
-$ pnpm install
+$ git clone https://github.com/pleielp/backend_nestjs.git
+$ cd backend-nestjs
+$ npm install
 ```
 
 ## Running the app
 
 ```bash
-# development
-$ pnpm run start
+# local mode
+$ cross-env NODE_ENV=local nest start --watch
 
-# watch mode
-$ pnpm run start:dev
+# dev mode
+$ cross-env NODE_ENV=dev nest start --watch
 
 # production mode
-$ pnpm run start:prod
+$ node dist/main
 ```
 
 ## Test

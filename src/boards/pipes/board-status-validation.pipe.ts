@@ -8,7 +8,6 @@ import { BoardStatus } from '../board-status.enum';
 export class BoardStateValidationPipe implements PipeTransform {
   readonly StatusOptions = [BoardStatus.PRIVATE, BoardStatus.PUBLIC];
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   transform(value: any, metadata: ArgumentMetadata) {
     value = value.toUpperCase();
 
