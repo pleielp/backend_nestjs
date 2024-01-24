@@ -47,6 +47,13 @@ $ cross-env NODE_ENV=dev nest start --watch
 $ node dist/main
 ```
 
+## Using docker
+
+```bash
+docker build -t backend_nestjs_image .
+docker run -d -p 3000:3000 --name backend-nestjs-app backend_nestjs_image
+```
+
 ## Test
 
 ```bash
